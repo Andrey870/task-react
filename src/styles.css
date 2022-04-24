@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+  background-image: linear-gradient(to bottom,#00ccff,#00e6ff 100%);
+  font-family: Garamond;
+}
+
+h1 {
+  color: blue;
+}
+@media only screen and (min-width: 600px) {
+  .center {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  }
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 20rem;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+  background-image: linear-gradient(to bottom,#00ccff,#00e6ff 100%);
+  font-family: Garamond;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  color: #000;
+  background-image: linear-gradient(to bottom,#6e60ff,#000eff 100%);
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Garamond;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
